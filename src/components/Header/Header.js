@@ -4,7 +4,6 @@ import './Header.scss';
 import city from '../../media/city.svg';
 import logo from '../../media/logo_1.png'
 
-
 class Header extends React.Component {
   constructor(props) {
     super(props)
