@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Navbar.scss';
-import logo from '../../media/logo.svg';
+import logo from '../../media/logo2.png';
 import { Link, NavLink } from 'react-router-dom';
 
 class Navbar extends React.Component {
@@ -36,8 +36,8 @@ class Navbar extends React.Component {
       </div>
       <div className="navbar-right">
         <ul className="navbar-social-media">
-          <li><a className="navbar-link github" href="https://github.com/michelle-pine"><i className="fa fa-github"></i><span className="sr-only">Github</span></a></li>
-          <li><a className="navbar-link linkedin" href="https://www.linkedin.com/in/michelle-pine"><i className="fa fa-linkedin"></i><span className="sr-only">LinkedIn</span></a></li>
+          <li><a className="navbar-link github" href="https://github.com/michelle-pine"><i className="fa fa-github-square"></i><span className="sr-only">Github</span></a></li>
+          <li><a className="navbar-link linkedin" href="https://www.linkedin.com/in/michelle-pine"><i className="fa fa-linkedin-square"></i><span className="sr-only">LinkedIn</span></a></li>
         </ul>
       </div>
     </nav>

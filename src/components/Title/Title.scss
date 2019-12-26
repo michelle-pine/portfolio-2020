@@ -1,10 +1,11 @@
 @import '../../index.scss';
 
 .title {
-  font-family: chantal, sans-serif;
+  font-family: 'Nanum Pen', cursive;
   font-weight: 500;
   font-style: normal;
   text-align: center;
   font-size: 3em;
   color: $yellow;
+  text-transform: uppercase;
 }

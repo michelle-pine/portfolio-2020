@@ -13,6 +13,7 @@
   background-attachment: fixed;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 
   .header-city {
     background-image: url(../../media/city.svg);
@@ -29,7 +30,10 @@
   }
 
   .header-logo {
-    width: 250px;
+    margin-top: 30vh;
+    max-width: 275px;
+    width: 25%;
+    min-width: 200px;
     z-index: 99;
   }
 
