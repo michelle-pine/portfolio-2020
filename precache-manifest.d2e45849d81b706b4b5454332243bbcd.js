@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1255adb1d4af3f6150a00f4a07a9605f",
+    "revision": "adb022a17d38d72972ae3a5e337f916e",
     "url": "//michelle-pine.github.io/portfolio-2020/index.html"
   },
   {
-    "revision": "e9d39aeda44e372bc2f2",
+    "revision": "afcf916d51c1eeb33c6e",
     "url": "//michelle-pine.github.io/portfolio-2020/static/css/2.5367444f.chunk.css"
   },
   {
-    "revision": "72936acd1284996cb38e",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.b6f16ece.chunk.css"
+    "revision": "8bbfe32ba58186eabf7d",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.a97f8cb2.chunk.css"
   },
   {
-    "revision": "e9d39aeda44e372bc2f2",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.f9e2e0db.chunk.js"
+    "revision": "afcf916d51c1eeb33c6e",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.9fc9a55c.chunk.js"
   },
   {
-    "revision": "72936acd1284996cb38e",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.35ad8461.chunk.js"
+    "revision": "8bbfe32ba58186eabf7d",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.3fa3dc1a.chunk.js"
   },
   {
     "revision": "06501c667154fb7ac722",
@@ -48,8 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//michelle-pine.github.io/portfolio-2020/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "85ed6bf9630ceb9d7c68bc6f0190fcdb",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/media/logo_1.85ed6bf9.png"
+    "revision": "d05300e01bf28d95a6734e5a56c058f6",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/logo2.d05300e0.png"
+  },
+  {
+    "revision": "b59a53ab73fe96168d44072ade2dd7fb",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/logo_1.b59a53ab.png"
   },
   {
     "revision": "4199c3eeb061953252291d754b09887b",
