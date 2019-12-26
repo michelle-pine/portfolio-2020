@@ -22,10 +22,11 @@ $white: #FFF;
   padding-inline-start: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Nanum+Pen+Script&display=swap');
 
 $font-stack: 'Montserrat', sans-serif;
+
 
 body {
   color: $white;
