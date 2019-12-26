@@ -30,6 +30,11 @@ $font-stack: 'Montserrat', sans-serif;
 body {
   color: $white;
   background-color: $darkest-purple;
+  background-image: url(./media/sunset.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   font-size: 14px;
   font-family: $font-stack;
   margin: 0;
@@ -50,8 +55,17 @@ body {
   min-height: calc(100vh - 125px);
   padding: 25px;
   padding-top: 25px;
-  max-width: 1000px;
   margin: 0 auto;
+  background: $darkest-purple;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  width: calc(100vw - 50px);
+  position: absolute;
+
+  .content-wrapper {
+    max-width: 1000px;
+  }
 }
 
 @mixin shadow {

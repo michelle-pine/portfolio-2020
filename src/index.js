@@ -24,11 +24,13 @@ const routing = (
     <Navbar />
     <Header />
     <div className="page-content">
-      <Route exact path="/" component={Projects} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
+      <div className="content-wrapper">
+        <Route exact path="/" component={Projects} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+        <Footer />
+      </div>
     </div>
-    <Footer />
   </Router>
 );
 
