@@ -21,6 +21,9 @@ import Footer from './components/Footer';
 
 const routing = (
   <Router basename='/'>
+    <div id="stars"/>
+    <div id="stars2"/>
+    <div id="stars3"/>
     <Navbar />
     <Header />
     <div className="page-content">

@@ -26,7 +26,7 @@ class Projects extends React.Component {
     return (
     <div className="projects-page">
       <Title title="Projects" />
-      <div className="projects-container">
+      <div className="page projects-container">
         {this.renderProjects()}
       </div>
     </div>

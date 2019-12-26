@@ -10,6 +10,11 @@
   z-index: 1;
   justify-content: center;
   align-items: flex-start;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 
   .header-city {
     background-image: url(../../media/city.svg);
@@ -62,87 +67,4 @@
   }
 }
 
-@function multiple-box-shadow ($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFFF66';
-  @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFFF66';
-  }
-  @return unquote($value);
-}
-
-$shadows-small:  multiple-box-shadow(700);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big:    multiple-box-shadow(100);
-
-#stars {
-  width: 2px;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: transparent;
-  box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
-    
-  &:after {
-    content: " ";
-    position: absolute;
-    top: -2000px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-small;
-  }
-}
-    
-#stars2 { 
-  width: 3px;
-  height: 3px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: transparent;
-  box-shadow: $shadows-medium;
-  animation: animStar 100s linear infinite;
-    
-  &:after {
-    content: " ";
-    position: absolute;
-    top: -2000px;
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: $shadows-medium;
-  }
-}
-
-#stars3 {
-  width: 4px;
-  height: 4px;
-  background: transparent;
-  box-shadow: $shadows-big;
-  position: absolute;
-  left: 0;
-  top: 0;
-  animation: animStar 150s linear infinite;
-    
-  &:after {
-    content: " ";
-    position: absolute;
-    top: -2000px;
-    width: 3px;
-    height: 3px;
-    background: transparent;
-    box-shadow: $shadows-big;
-  } 
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0px)
-  }
-  to {
-    transform: translateY(2000px)
-  }
-}
     
