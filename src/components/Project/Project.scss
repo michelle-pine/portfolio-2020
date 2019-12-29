@@ -61,6 +61,12 @@
     .project-image {
       min-height: 250px;
       background-size: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border: 3px solid $dark-purple;
+      border-bottom: 0px;
     }
     .project-info {
       white-space: pre-wrap;
@@ -71,6 +77,7 @@
       min-width: 0;
       max-width: none;
       display: flex;
+      width: auto;
       flex-direction: column;
     }
   }
@@ -91,7 +98,7 @@
     @include shadow;
   }
 
-  @media screen and (max-width: 915px) and (min-width: 800px) {
+  @media screen and (max-width: 950px) and (min-width: 800px) {
     .project-image {
       background-size: auto 100%;
     }
