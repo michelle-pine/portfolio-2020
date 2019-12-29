@@ -4,7 +4,7 @@ $magenta: #E9275B;
 $dark-purple: #392270;
 $darkest-purple: #01082d;
 $almost-black: rgb(1, 4, 19);
-$yellow: rgb(255, 255, 102);
+$yellow: #ffff66;
 $purple: #5736A7;
 $light-purple: #7A11FF;
 $white: #FFF;
@@ -31,11 +31,11 @@ $font-stack: 'Montserrat', sans-serif;
 body {
   color: $white;
   background-color: $darkest-purple;
-  background-image: url(./media/sunset.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  background: #e9275b; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e9275b 0%, #ffff66 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #e9275b 0%,#ffff66 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #e9275b 0%,#ffff66 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9275b', endColorstr='#ffff66',GradientType=0 ); /* IE6-9 */
   font-size: 14px;
   font-family: $font-stack;
   margin: 0;
