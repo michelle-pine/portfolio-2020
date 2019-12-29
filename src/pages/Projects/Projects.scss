@@ -2,6 +2,35 @@
 
 
 .projects-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px 65px 25px;
+    width: 45vw;
+    background: $dark-purple;
+    border: 3px solid $purple;
+    padding: 15px;
+    border-radius: 10px;
+    .info-photo {
+      min-width: 100px;
+      border-radius: 100%;
+      min-height: 100px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+    }
+    .info-description {
+      margin-left: 25px;
+      min-width: 0px;
+    }
+    @media screen and (max-width: 900px) {
+      width: calc(100% - 30px);
+    }
+  }
   .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

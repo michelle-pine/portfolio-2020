@@ -12,42 +12,23 @@
   top: 0;
   justify-content: space-between;
   z-index: 999;
-  @media screen and (max-width: 375px) {
-    justify-content: center;
-    .navbar-logo {
-      display: none;
-    }
-    .navbar-links {
-      font-size: 13px;
-     
-    }
-    .navbar-left {
-      padding-left: 0px!important;
-      .navbar-links {
-        .navbar-link {
-          margin-right: 3px!important;
-        }
-      }
-    }
-    .navbar-right {
-      padding-right: 0px!important;
-      .navbar-social-media {
-        .navbar-link {
-          margin-right: 3px!important;
-        }
-      }
-    }
-  }
+  border-bottom: 3px solid rgba(0,0,0,0);
   .navbar-left {
     display: flex;
     align-items: center;
     padding-left: 5px;
-    .navbar-logo {
+   .navbar-logo {
       width: 40px;
-    
+      height: 40px;
+      border: 3px solid rgba(0,0,0,0);
       margin-right: 15px;
+      border-radius: 100%;
+      @include transition;
       img {
         width: 100%;
+      }
+      &:hover {
+        border: 3px solid $dark-purple;
       }
     }
     .navbar-links {
@@ -62,13 +43,17 @@
         text-decoration: none;
         @include transition; 
         margin-right: 10px;
-
-        &:hover, &.active {
+        &:hover {
+          background: $purple;
+        }
+        &.active {
           background: $yellow;
-          padding: 10px;
-
-          border-radius: 25px;
           color: $darkest-purple;
+          &:hover {
+            background: $yellow;
+            color: $darkest-purple;
+            cursor: default;
+          }
         }
       }
     }
@@ -92,19 +77,8 @@
         align-content: center;
         height: 40px;
         position: relative;
-
         border-radius: 50%;
-       
         margin-right: 10px;
-        &:hover {
-          color: $yellow;
-          background: $yellow;
-
-          i {
-            background: $dark-purple;
-          }
-        }
-
         i {
           background: $yellow;
           width: 24px;
@@ -116,10 +90,48 @@
             position: absolute;
             margin-top: -5px;
             margin-left: -1px;
+          } 
+        }
+        &:hover {
+          background: $purple;
+          color: $purple;
+          i {
+            @include transition; 
+            color: $purple;
+            background: $yellow;
           }
-          
         }
       }
     }
+  }
+  @media screen and (max-width: 375px) {
+    justify-content: center;
+    .navbar-logo {
+      display: none;
+    }
+    .navbar-links {
+      font-size: 13px;
+     
+    }
+    .navbar-left {
+      padding-left: 0px;
+      .navbar-links {
+        .navbar-link {
+          margin-right: 3px;
+        }
+      }
+    }
+    .navbar-right {
+      padding-right: 0px;
+      .navbar-social-media {
+        .navbar-link {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  &.scrolled {
+    background: darken($darkest-purple, 5);
+    border-bottom: 3px solid rgba($dark-purple, 0.5);
   }
 }

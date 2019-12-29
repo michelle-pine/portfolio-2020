@@ -16,6 +16,7 @@ class Project extends React.Component {
       </div>
       <div className="project-info">
         <h3 className="project-title">{this.props.title}</h3>
+        <div className="project-year"><span className="sr-only">Year Produced: </span> {this.props.year}</div>
         <p className="project-description">{this.props.description}</p>
       </div>
     </Link>

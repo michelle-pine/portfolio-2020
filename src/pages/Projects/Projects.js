@@ -5,6 +5,7 @@ import './Projects.scss';
 import Title from '../../components/Title';
 import Project from '../../components/Project';
 import projects from '../../data/projects';
+import michelle from '../../media/michelle1.jpeg';
 
 class Projects extends React.Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class Projects extends React.Component {
         title={proj.title} 
         description={proj.description} 
         url={proj.url}
+        year={proj.year}
         image={proj.image}
       />
     });
@@ -24,9 +26,15 @@ class Projects extends React.Component {
 
   render() {
     return (
-    <div className="projects-page">
+    <div className="projects-page page">
       <Title title="Projects" />
-      <div className="page projects-container">
+      <div className="info-section">
+        <div style={{backgroundImage: `url(${michelle})`}} className="info-photo"/>
+        <div className="info-description">
+          Michelle Pine is a student, designer, developer, and writer specializing in client-facing technology. 
+        </div>
+      </div>
+      <div className="projects-container">
         {this.renderProjects()}
       </div>
     </div>

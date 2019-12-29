@@ -56,5 +56,18 @@ $(function () {
   $(".down-button").click(function () {
     scrollPastHeader();
   });
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var $header = $(".header");
+     //>=, not <=
+    if (scroll >= $header.height() - 50) {
+        //clearHeader, not clearheader - caps H
+        $(".navbar").addClass("scrolled");
+    }
+    else {
+      //clearHeader, not clearheader - caps H
+      $(".navbar").removeClass("scrolled");
+    }
+  });
 });
 
