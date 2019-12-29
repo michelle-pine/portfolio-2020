@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffe8991a66a8121b1e16a8bc30439478",
+    "revision": "9fd4c3c1fca5dec70e15cb60ef13e0dc",
     "url": "//michelle-pine.github.io/portfolio-2020/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//michelle-pine.github.io/portfolio-2020/static/css/2.5367444f.chunk.css"
   },
   {
-    "revision": "613b2a1b2a32b32c360a",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.b32195dd.chunk.css"
+    "revision": "c479f3ddbff75862505a",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.0f85f3d8.chunk.css"
   },
   {
     "revision": "c1c9ce52d7ae6d60a40b",
     "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.c90486cf.chunk.js"
   },
   {
-    "revision": "613b2a1b2a32b32c360a",
+    "revision": "c479f3ddbff75862505a",
     "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.9cbb6ffa.chunk.js"
   },
   {
