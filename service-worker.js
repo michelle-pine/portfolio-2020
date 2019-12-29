@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "//michelle-pine.github.io/portfolio-2020/precache-manifest.e6142e0a355112fe2064eaf59885f45b.js"
+  "//michelle-pine.github.io/portfolio-2020/precache-manifest.f78dc38edc1aede18001cc1c50ac8743.js"
 );
 
 self.addEventListener('message', (event) => {
