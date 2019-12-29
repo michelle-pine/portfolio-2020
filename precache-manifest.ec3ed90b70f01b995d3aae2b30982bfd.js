@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12afe4378dbe457ed7b4831c40c4e003",
+    "revision": "ffe8991a66a8121b1e16a8bc30439478",
     "url": "//michelle-pine.github.io/portfolio-2020/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//michelle-pine.github.io/portfolio-2020/static/css/2.5367444f.chunk.css"
   },
   {
-    "revision": "19790134a4174be1fa58",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.16b67bb4.chunk.css"
+    "revision": "613b2a1b2a32b32c360a",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.b32195dd.chunk.css"
   },
   {
     "revision": "c1c9ce52d7ae6d60a40b",
     "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.c90486cf.chunk.js"
   },
   {
-    "revision": "19790134a4174be1fa58",
+    "revision": "613b2a1b2a32b32c360a",
     "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.9cbb6ffa.chunk.js"
   },
   {
@@ -114,10 +114,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "70352ee568891cc0185935bb5eb83c27",
     "url": "//michelle-pine.github.io/portfolio-2020/static/media/starborne.70352ee5.png"
-  },
-  {
-    "revision": "4199c3eeb061953252291d754b09887b",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/media/sunset.4199c3ee.svg"
   },
   {
     "revision": "f9774e9eaae0763b71029af41c7b812d",
