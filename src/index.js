@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, HashRouter as Router } from 'react-router-dom'
 import $ from 'jquery';
 
+import projectList from './data/projects';
 
 import './index.scss';
 import 'font-awesome/css/font-awesome.min.css'
@@ -18,7 +19,6 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-
 const routing = (
   <Router basename='/'>
     <div id="stars"/>
@@ -31,6 +31,7 @@ const routing = (
         <Route exact path="/" component={Projects} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
+        {projectList.filter((project) => !project.redirect).map((project) => <Route exact path={`/projects/${project.url}`} component={project.page} />)}
         <Footer />
       </div>
     </div>

@@ -20,6 +20,7 @@ class Projects extends React.Component {
         url={proj.url}
         year={proj.year}
         image={proj.image}
+        redirect={proj.redirect}
       />
     });
   }

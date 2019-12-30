@@ -30,12 +30,14 @@
     border-bottom-right-radius: 10px;
     @include transition;
     padding: 15px;
-    height: 100%;
     width: 100%;
     .project-title, .project-description {
       max-width: 100%;
       white-space: pre-wrap;
       word-wrap: break-word; 
+    }
+    .project-description {
+      font-family: 'Open Sans', sans-serif;
     }
     .project-title {
       font-weight: 600;
@@ -55,32 +57,6 @@
       border-radius: 25px;
       padding: 5px;
     }
-    
-  }
-
-  @media screen and (max-width: 450px) {
-    // flex-direction: column;
-    // max-height: none;
-    border: 3px solid $dark-purple;
-    align-items: center;
-
-    .project-image {
-      min-width: 125px;
-      min-height: 125px;
-      margin-left: 10px;
-      height: 125px;
-      width: 125px;
-      border-radius: 100%;
-      border: 3px solid $dark-purple;
-    }
-
-    .project-info {
-      border: none;
-      .project-description {
-        font-size: 12px;
-        margin-top: 0px;
-      }
-    }
   }
 
   &:hover {
@@ -99,7 +75,41 @@
     @include shadow;
   }
 
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 800px) {
+    align-items: center;
+    padding: 0px;
+    width: 100vw;
+    border-bottom: 3px solid $dark-purple;
+    border-radius: 0px;
+    .project-image {
+      min-width: 115px;
+      min-height: 115px;
+      margin-left: 15px;
+      height: 115px;
+      width: 115px;
+      border-radius: 100%;
+      border: 3px solid $dark-purple;
+    }
+    .project-info {
+      border: none;
+      padding-right: 15px;
+      height: 100%;
+      .project-description {
+        font-size: 13px;
+        margin-top: 0px;
+      }
+    }
+    &:hover {
+      background: $dark-purple;
+      @include transition;
+      .project-info {
+        background: transparent;
+        border-color: 0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 850px) {
     .project-image {
       background-size: auto 100%;
     }
