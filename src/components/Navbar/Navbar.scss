@@ -18,17 +18,23 @@
     align-items: center;
     padding-left: 5px;
    .navbar-logo {
+      margin-right: 15px;
       width: 40px;
       height: 40px;
-      border: 3px solid rgba(0,0,0,0);
-      margin-right: 15px;
-      border-radius: 100%;
       @include transition;
       img {
         width: 100%;
-      }
-      &:hover {
-        border: 3px solid $dark-purple;
+      } 
+      a {
+        border: 3px solid rgba(0,0,0,0);
+        display: block;
+        width: 40px;
+        height: 40px;
+        &:hover, &:focus {
+          border: 3px solid $purple;
+          outline: none!important;
+          border-radius: 100%;
+        }
       }
     }
     .navbar-links {
@@ -43,13 +49,14 @@
         text-decoration: none;
         @include transition; 
         margin-right: 10px;
-        &:hover {
+        &:hover, &:focus {
           background: $purple;
+          outline: none;
         }
         &.active {
           background: $yellow;
           color: $darkest-purple;
-          &:hover {
+          &:hover, &:focus {
             background: $yellow;
             color: $darkest-purple;
             cursor: default;
@@ -70,36 +77,26 @@
         color: $dark-purple;
         background: $dark-purple;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 25px;
         @include transition; 
         width: 40px;
-        display: inline-flex;
-        align-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 40px;
         position: relative;
         border-radius: 50%;
         margin-right: 10px;
         i {
-          background: $yellow;
-          width: 24px;
-          top: 9px;
-          left: 8px;
-          height: 20px;
-          position: absolute;
-          &::before {
-            position: absolute;
-            margin-top: -5px;
-            margin-left: -1px;
-          } 
+          color: $yellow;
+          width: 20px;
+          margin-top: 4px;
+          font-size: 20px;
+          height: 24px;
         }
-        &:hover {
+        &:hover, &:focus {
           background: $purple;
-          color: $purple;
-          i {
-            @include transition; 
-            color: $purple;
-            background: $yellow;
-          }
+          outline: none!important;
         }
       }
     }

@@ -12,7 +12,6 @@ class Header extends React.Component {
   render() {
     return (
     <div className="header">
-      <img src={logo} alt="" className="header-logo"/>
       <h1 className="sr-only">Michelle Pine</h1>
       <button className="down-button"><span className="sr-only">Scroll Down</span><i className="fa fa-chevron-down"></i></button>
       <div className="header-city"></div>

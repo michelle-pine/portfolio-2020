@@ -19,11 +19,15 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+//images
+import logo from './media/logo.png'
+
 const routing = (
   <Router basename='/'>
     <div id="stars"/>
     <div id="stars2"/>
     <div id="stars3"/>
+    <div className="logo-bg"><img src={logo} alt="" className="header-logo"/></div>
     <Navbar />
     <Header />
     <div className="page-content">

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://https://michelle-pine.github.io/portfolio-2020",
   "dependencies": {
+    "@khanacademy/react-multi-select": "^0.3.3",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",

@@ -36,8 +36,8 @@ class Navbar extends React.Component {
       </div>
       <div className="navbar-right">
         <ul className="navbar-social-media">
-          <li><a className="navbar-link github" href="https://github.com/michelle-pine"><i className="fa fa-github-square"></i><span className="sr-only">Github</span></a></li>
-          <li><a className="navbar-link linkedin" href="https://www.linkedin.com/in/michelle-pine"><i className="fa fa-linkedin-square"></i><span className="sr-only">LinkedIn</span></a></li>
+          <li><a className="navbar-link github" href="https://github.com/michelle-pine"><i className="fa fa-github"></i><span className="sr-only">Github</span></a></li>
+          <li><a className="navbar-link linkedin" href="https://www.linkedin.com/in/michelle-pine"><i className="fa fa-linkedin"></i><span className="sr-only">LinkedIn</span></a></li>
         </ul>
       </div>
     </nav>

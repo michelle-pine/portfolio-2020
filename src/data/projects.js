@@ -45,6 +45,7 @@ const projects = [
     page: WritingSamples,
     url: "writing-samples",
     year: 2019,
+    type: ["writing"],
   },
   {
     title: "C3PO-R3",
@@ -53,6 +54,7 @@ const projects = [
     page: C3Po,
     url: "c3po-r3",
     year: 2018,
+    type: ["coding", "design"],
   },
   {
     title: "Cardiac Fitness App",
@@ -61,6 +63,7 @@ const projects = [
     page: CardiacFitness,
     url: "cardiac-fitness",
     year: 2018,
+    type: ["coding", "design"],
   },
   {
     title: "Emotiquote",
@@ -69,6 +72,7 @@ const projects = [
     page: Emotiquote,
     url: "emotiquote",
     year: 2018,
+    type: ["coding", "design"],
   },
   {
     title: "Daylight Theme",
@@ -77,7 +81,7 @@ const projects = [
     page: Daylight,
     url: "daylight-theme",
     year: 2018,
-
+    type: ["coding", "design"],
   },
   {
     title: "Easy Animator",
@@ -85,7 +89,8 @@ const projects = [
     image: EasyAnimatorImg,
     page: EasyAnimator,
     url: "easy-animator",
-    year: 2017
+    year: 2017,
+    type: ["coding"],
   },
   {
     title: "Blankets for Boston",
@@ -94,6 +99,7 @@ const projects = [
     year: 2017,
     page: BlanketsForBoston,
     image: BlanketsForBostonImg,
+    type: ["coding", "design"],
   },
   {
     title: "Ribbons Theme",
@@ -102,6 +108,7 @@ const projects = [
     image: RibbonsImg,
     page: Ribbons,
     year: 2017,
+    type: ["coding", "design"],
   },
   {
     title: "Maze Game",
@@ -110,6 +117,7 @@ const projects = [
     image: MazeGameImg,
     page: MazeGame,
     year: 2017,
+    type: ["coding"],
   },
   {
     title: "The Forbidden Island",
@@ -118,6 +126,7 @@ const projects = [
     image: ForbiddenIslandImg,
     page: ForbiddenIsland,
     year: 2017,
+    type: ["coding"],
   },
   {
     title: "Fearless Flight",
@@ -126,6 +135,7 @@ const projects = [
     image: FearlessFlightImg,
     page: FearlessFlight,
     year: 2017,
+    type: ["coding", "design"],
   },
   {
     title: "PJ Library Videos",
@@ -134,6 +144,7 @@ const projects = [
     image: PJLibraryVideosImg,
     page: PjLibraryVideos,
     year: 2017,
+    type: ["design", "video"],
   },
   {
     title: "Wonder",
@@ -142,6 +153,7 @@ const projects = [
     image: WonderImg,
     page: Wonder,
     year: 2017,
+    type: ["coding", "design"],
   },
   {
     title: "Windy Weather",
@@ -150,6 +162,7 @@ const projects = [
     image: WindyWeatherImg,
     page: WindyWeather,
     year: 2017,
+    type: ["coding", "design"],
   },
   {
     title: "Starborne",
@@ -158,6 +171,7 @@ const projects = [
     page: Starborne,
     image: StarborneImg,
     year: 2016,
+    type: ["coding", "design"],
   },
   {
     title: "Phases",
@@ -166,6 +180,7 @@ const projects = [
     page: Phases,
     image: PhasesImg,
     year: 2016,
+    type: ["coding", "design"],
   },
   {
     title: "PJ Graphics",
@@ -174,6 +189,7 @@ const projects = [
     page: PjGraphics,
     image: PJGraphicsImg,
     year: 2016,
+    type: ["design"],
   },
   {
     title: "Tumblr Graphics",
@@ -182,6 +198,7 @@ const projects = [
     redirect: true,
     image: TumblrGraphicsImg,
     year: 2016,
+    type: ["design"],
   }
 ];
 

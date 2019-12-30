@@ -41,25 +41,44 @@
     }
     .project-title {
       font-weight: 600;
-      margin-top: 25px;
+      margin-top: 30px;
       color: $yellow!important;
     }
-    .project-year {
+    .project-topbar {
       position: absolute;
       right: 0px;
       top: 0px;
       margin-top: 10px;
       margin-right: 10px;
-      font-size: 10px;
-      font-weight: 700;
-      color: $yellow;
-      border: 2px solid $dark-purple;
-      border-radius: 25px;
-      padding: 5px;
+      display: flex;
+      .project-year {
+        font-size: 10px;
+        font-weight: 700;
+        color: $yellow;
+        border: 2px solid $dark-purple;
+        border-radius: 25px;
+        padding: 5px;
+      }
+      .project-icons {
+        display: flex;
+        .project-icon {
+          font-size: 10px;
+          height: 10px;
+          width: 10px;
+          display: flex;
+          align-items: center;
+          color: $yellow;
+          border: 2px solid $dark-purple;
+          border-radius: 25px;
+          padding: 5px;
+        }
+      }
+
     }
   }
 
-  &:hover {
+  &:hover, &:focus {
+    outline: none;
     .project-image {
       background-size: 110%;
       border-color: $purple;
@@ -67,7 +86,7 @@
     .project-info {
       background: $dark-purple;
       border-color: $purple;
-      .project-year {
+      .project-year, .project-icons .project-icon {
         border-color: $purple;
       }
     }
@@ -99,7 +118,7 @@
         margin-top: 0px;
       }
     }
-    &:hover {
+    &:hover, &:focus {
       background: $dark-purple;
       @include transition;
       .project-info {
@@ -114,7 +133,7 @@
       background-size: auto 100%;
     }
 
-    &:hover {
+    &:hover, &:focus {
       .project-image {
         background-size: auto 110%!important;
       }

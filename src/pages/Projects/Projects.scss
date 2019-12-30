@@ -5,11 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   .info-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 25px 65px 25px;
+    margin: 0px 25px 35px 25px;
     width: 45vw;
     background: $dark-purple;
     border: 3px solid $purple;
@@ -34,8 +35,164 @@
       font-family: 'Open Sans', sans-serif;
     }
     @media screen and (max-width: 900px) {
-      width: calc(100% - 30px);
+      width: calc(100% - 40px);
       border: 3px solid $purple;
+      margin-left:0px;
+      margin-right:0px;      
+    }
+  }
+  .projects-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0px 50px 0px;
+    border-radius: 10px;
+    text-align: center;
+    .searchbox {
+      width: 100%;
+      max-width: 200px;
+      margin-right: 20px;
+      position: relative;
+      #search-box {
+        background: transparent;
+        border: 0px;
+        max-width: 200px;
+        font-family: $font-stack;
+        box-sizing : border-box;
+        font-size: 14px;
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 5px 10px;
+        padding-top: 7px;
+        text-transform: lowercase;
+        color: $white;
+        background-color: $dark-purple;
+        font-weight: 600;
+        border-radius: 25px!important;
+        border: 3px solid $purple;
+        @include transition;
+        &::placeholder { 
+          color: rgb(170, 170, 170);
+          opacity: 1;
+        }
+        
+        &:focus, &:hover {
+          border: 3px solid $light-purple;
+          outline: none;
+          background-color: $purple;
+          + .search-icon {
+            color: $light-purple;
+          }
+        }
+        + .search-icon {
+          @include transition;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right: 15px;
+          top: 10px;
+          color: rgb(170, 170, 170);
+        }
+      }
+     
+    }
+    .year-filter {
+      width: 100%;
+      max-width: 200px;
+      margin-right: 20px;
+    }
+    .type-filter {
+      width: 100%;
+      max-width: 200px;
+    }
+    .dropdown { 
+      @include transition;
+      .dropdown-heading {
+        background-color: $dark-purple!important;
+        font-weight: 600;
+        border-radius: 25px!important;
+        color: $yellow!important;
+        display: flex;
+        align-items: center;
+        border-color: $purple!important;
+        border-width: 3px!important;
+        @include transition;
+        text-transform: lowercase;
+  
+        .dropdown-heading-value {
+          color: $white!important;
+          text-transform: lo;
+        }
+      }
+  
+      .dropdown-content {
+        @include transition;
+        background-color: $dark-purple!important;
+        font-weight: 600;
+        border-radius: 10px!important;
+        color: $yellow!important;
+        border-color: $purple!important;
+        border-width: 3px!important;
+        margin-top: 5px!important;
+  
+        .select-item {
+          background-color: $dark-purple!important;
+          font-weight: 600;
+          color: $white!important;
+          @include transition;
+          text-transform: lowercase!important;
+          border-color: $purple!important;
+          border-width: 3px!important;
+          input[type="checkbox"] {
+            visibility: hidden;
+            font-size: 1px;
+            &::after {
+              @include transition;
+            }
+            &:checked {
+              &::after{
+                visibility: visible!important;
+                content: "✔";
+                color: $yellow;
+                font-size: 12px;
+              }
+            }
+          }
+          &:hover, &:focus {
+            background-color: $purple!important;
+            color: $white!important;
+            border-color: $light-purple!important;
+          }
+        }
+      }
+      &:hover, &:focus {
+        .dropdown-heading {
+          background-color: $purple!important;
+          color: $white!important;
+          border-color: $light-purple!important;
+        }
+      }
+    }
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      margin: 15px 0px;
+      width: 100%;
+      padding: 0px;
+      .year-filter {
+        width: calc(100% - 3px);
+        max-width: none;
+        margin-bottom: 15px;
+        margin-right: 0px;
+      }
+      .type-filter {
+        width: calc(100% - 3px);
+        max-width: none;
+      }
     }
   }
   .projects-container {

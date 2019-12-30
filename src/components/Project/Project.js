@@ -9,26 +9,41 @@ class Project extends React.Component {
     super(props)
   }
 
-  getUrl() {
-    if (this.props.redirect) {
-      return this.props.url;
-    }
-    else {
-      return `/projects/${this.props.url}`;
-    }
+  getIcons() {
+    return this.props.project.type.map(function(type) {
+      let icon = "";
+      switch(type) {
+        case "design":
+          icon = "fa-crop";
+          break;
+        case "video": 
+          icon = "fa-play";
+          break;
+        case "writing":
+          icon = "fa-pencil";
+          break;
+        default:
+          icon = "fa-code";
+          break;
+      }
+      return <div className="project-icon"><div className="sr-only">{type} </div><i className={`fa ${icon}`}></i></div>
+    });
   }
 
   render() {
-    const Tag = this.props.redirect ? ExternalLink : Link;
-    const link = this.props.redirect ? this.props.url : `/projects/${this.props.url}`;
+    const Tag = this.props.project.redirect ? ExternalLink : Link;
+    const link = this.props.project.redirect ? this.props.project.url : `/projects/${this.props.project.url}`;
     return (
-      <Tag className="project" to={link} target={this.props.redirect ? "_blank" : null}>
-        <div className="project-image" style={{backgroundImage: `url(${this.props.image})`}}>
+      <Tag className="project" to={link} target={this.props.project.redirect ? "_blank" : null}>
+        <div className="project-image" style={{backgroundImage: `url(${this.props.project.image})`}}>
         </div>
         <div className="project-info">
-          <h3 className="project-title">{this.props.title}</h3>
-          <div className="project-year"><span className="sr-only">Year Produced: </span> {this.props.year}</div>
-          <p className="project-description">{this.props.description}</p>
+          <h3 className="project-title">{this.props.project.title}</h3>
+          <div className="project-topbar">
+            <div className="project-icons">{this.getIcons()}</div>
+            <div className="project-year"><span className="sr-only">Year Produced: </span> {this.props.project.year}</div>
+          </div>
+          <p className="project-description">{this.props.project.description}</p>
         </div>
       </Tag>
     );
@@ -40,11 +55,7 @@ Project.defaultProps = {
 };
 
 Project.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  url: PropTypes.string,
-  image: PropTypes.string,
-  redirect: PropTypes.bool,
+  project: PropTypes.object,
 };
 
 export default Project;
