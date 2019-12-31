@@ -61,6 +61,9 @@ $(function () {
   $(".down-button").click(function () {
     scrollPastHeader();
   });
+  $("a.project").click(function () {
+    scrollPastHeader();
+  });
   $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     var $header = $(".header");

@@ -59,7 +59,6 @@
       #search-box {
         background: transparent;
         border: 0px;
-        max-width: 200px;
         font-family: $font-stack;
         box-sizing : border-box;
         font-size: 14px;
@@ -72,7 +71,7 @@
         color: $white;
         background-color: $dark-purple;
         font-weight: 600;
-        border-radius: 25px!important;
+        border-radius: 25px;
         border: 3px solid $purple;
         @include transition;
         &::placeholder { 
@@ -97,6 +96,15 @@
           right: 15px;
           top: 10px;
           color: rgb(170, 170, 170);
+        }
+      }
+      @media screen and (max-width: 450px) { 
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        margin-bottom: 15px;
+        #search-box {
+          border-radius: 0px;
         }
       }
      
@@ -179,20 +187,24 @@
       }
     }
     @media screen and (max-width: 450px) {
-      flex-direction: column;
-      margin: 15px 0px;
-      width: 100%;
-      padding: 0px;
-      .year-filter {
-        width: calc(100% - 3px);
-        max-width: none;
-        margin-bottom: 15px;
-        margin-right: 0px;
-      }
-      .type-filter {
-        width: calc(100% - 3px);
-        max-width: none;
-      }
+      display: none;
+      // flex-direction: column;
+      // margin: 15px 0px;
+      // width: 100%;
+      // padding: 0px;
+      // .year-filter {
+      //   width: calc(100% - 3px);
+      //   max-width: none;
+      //   margin-bottom: 15px;
+      //   margin-right: 0px;
+      // }
+      // .type-filter {
+      //   width: calc(100% - 3px);
+      //   max-width: none;
+      // }
+      // .dropdown .dropdown-heading {
+      //   border-radius: 0px!important;
+      // }
     }
   }
   .projects-container {

@@ -54,6 +54,20 @@ body {
   border: 0;
 }
 
+.page {
+  position: relative;
+  .page-description {
+    max-width: 450px;
+    margin: 0 auto;
+    background: $dark-purple;
+    border: 3px solid $purple;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+}
+
 .page-content {
   min-height: calc(100vh - 123px);
   background: $darkest-purple;

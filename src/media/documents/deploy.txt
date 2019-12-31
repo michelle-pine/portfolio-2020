@@ -1,0 +1,7 @@
+deploy 
+https://medium.com/@swarnakishore/deploying-angular-cli-project-to-github-pages-db49246598a1
+
+
+ng build --env=prod --base-href "https://michellepine.com/"
+
+angular-cli-ghpages

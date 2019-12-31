@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './WindyWeather.scss';
+import Title from '../../components/Title';
+import BackButton from '../../components/BackButton';
 
 class WindyWeather extends React.Component {
   constructor(props) {
@@ -10,6 +12,8 @@ class WindyWeather extends React.Component {
   render() {
     return (
     <div className='page'>
+      <BackButton history={this.props.history}/>
+      <Title title="Windy Weather" />
     </div>
     );
   }

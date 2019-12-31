@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './FearlessFlight.scss';
+import Title from '../../components/Title';
+import BackButton from '../../components/BackButton';
 
 class FearlessFlight extends React.Component {
   constructor(props) {
@@ -10,6 +12,8 @@ class FearlessFlight extends React.Component {
   render() {
     return (
     <div className='page'>
+      <BackButton history={this.props.history}/>
+      <Title title="Fearless Flight" />
     </div>
     );
   }

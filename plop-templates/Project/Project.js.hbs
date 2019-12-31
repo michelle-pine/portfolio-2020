@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Starborne.scss';
+import './{{pascalCase name}}.scss';
 import Title from '../../components/Title';
 import BackButton from '../../components/BackButton';
 
-class Starborne extends React.Component {
+class {{pascalCase name}} extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -13,18 +13,18 @@ class Starborne extends React.Component {
     return (
     <div className='page'>
       <BackButton history={this.props.history}/>
-      <Title title="Starborne" />
+      <Title title='{{pascalCase name}}'/>
     </div>
     );
   }
 };
 
-Starborne.defaultProps = {
+{{pascalCase name}}.defaultProps = {
 
 };
 
-Starborne.propTypes = {
+{{pascalCase name}}.propTypes = {
 
 };
 
-export default Starborne;
+export default {{pascalCase name}};
