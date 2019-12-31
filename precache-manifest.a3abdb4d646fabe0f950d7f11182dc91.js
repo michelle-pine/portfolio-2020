@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88c1237cac8695c4f7949bd33ff5ceb6",
+    "revision": "676212a0aabf51de869f44cec4d42fa4",
     "url": "//michelle-pine.github.io/portfolio-2020/index.html"
   },
   {
-    "revision": "d3159a0e3ee39817e8fb",
+    "revision": "a3b9d65c7f5155ae7652",
     "url": "//michelle-pine.github.io/portfolio-2020/static/css/2.5367444f.chunk.css"
   },
   {
-    "revision": "c5b2e8ea85b1f1371f55",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.0ec80247.chunk.css"
+    "revision": "3cd57dbdc7b461006dd3",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.aa1e9485.chunk.css"
   },
   {
-    "revision": "d3159a0e3ee39817e8fb",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.8b1fd90a.chunk.js"
+    "revision": "a3b9d65c7f5155ae7652",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.1e4c127b.chunk.js"
   },
   {
-    "revision": "c5b2e8ea85b1f1371f55",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.ed460264.chunk.js"
+    "revision": "3cd57dbdc7b461006dd3",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.17c7a0bb.chunk.js"
   },
   {
     "revision": "06501c667154fb7ac722",
@@ -40,8 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//michelle-pine.github.io/portfolio-2020/static/media/blanketsForBoston.151b7e13.png"
   },
   {
+    "revision": "d06460eb1f24b37e73882377f0d0c4ce",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/c3po-screenshot.d06460eb.png"
+  },
+  {
     "revision": "8942e22ec19b2cab768ad975b37cef3f",
     "url": "//michelle-pine.github.io/portfolio-2020/static/media/c3po.8942e22e.png"
+  },
+  {
+    "revision": "48e4b61e7194d37b7fdb655497305497",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/cf-screenshot1.48e4b61e.png"
+  },
+  {
+    "revision": "7bb1cdd6a7d42bef88e3c4eb70d7a784",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/cf-screenshot2.7bb1cdd6.png"
   },
   {
     "revision": "d6b8c5d611331e5bda4ebb703dd79b45",
@@ -94,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6ccd562c7927156f23f5130a61c64aba",
     "url": "//michelle-pine.github.io/portfolio-2020/static/media/grinspoonGraphics.6ccd562c.jpg"
+  },
+  {
+    "revision": "f8f08c0a5282f4137861a5601a09bc0a",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/hackbeanpot.f8f08c0a.jpg"
   },
   {
     "revision": "b59a53ab73fe96168d44072ade2dd7fb",
