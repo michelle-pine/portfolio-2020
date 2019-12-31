@@ -57,7 +57,7 @@ body {
 .page {
   position: relative;
   .page-description {
-    max-width: 450px;
+    max-width: 700px;
     margin: 0 auto;
     background: $dark-purple;
     border: 3px solid $purple;
@@ -65,6 +65,70 @@ body {
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 25px;
+    a {
+      color: $yellow;
+      @include transition();
+      text-decoration: none;
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      margin-bottom: 0px;
+      border-radius: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      &.no-top-border {
+        border-top: 0px;
+      }
+    }
+  }
+  .page-image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 725px;
+      width: 100%;
+      border: 3px solid $purple;
+      border-radius: 10px;
+      
+    }
+    margin-bottom: 25px;
+    cursor: zoom-in;
+    @media screen and (max-width: 900px) {
+      margin-bottom: 0px;
+      img {
+        border-radius: 0px;
+        border-top: 0px;
+      }
+    }
+  }
+  .side-by-side-image {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    .page-image-wrapper {
+      img {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      +.page-image-wrapper {
+        margin-left: 2px;
+        img {
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin-bottom: 3px;
+        }
+      }
+
+    }
+    .page-image-wrapper {
+      max-width: 350px;
+    }
   }
 }
 

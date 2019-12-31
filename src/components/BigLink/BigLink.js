@@ -9,9 +9,10 @@ class BigLink extends React.Component {
 
   render() {
     return (
-      <a className="big-link" href={this.props.to}>
+      <a className="big-link" target="_blank" href={this.props.to}>
         <div className="big-link-icon"><i className={`fa ${this.props.icon}`}></i></div>
         <div className="big-link-text">{this.props.text}</div>
+        <div className="big-link-arrow"><i className="fa fa-chevron-right"></i></div>
       </a>
     )
   }
