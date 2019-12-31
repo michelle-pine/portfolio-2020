@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6b9620fcc03c451296fd0280d22d9fb",
+    "revision": "88c1237cac8695c4f7949bd33ff5ceb6",
     "url": "//michelle-pine.github.io/portfolio-2020/index.html"
   },
   {
-    "revision": "cd47c0711133da24a6b0",
+    "revision": "d3159a0e3ee39817e8fb",
     "url": "//michelle-pine.github.io/portfolio-2020/static/css/2.5367444f.chunk.css"
   },
   {
-    "revision": "06385b707f005eb22cbe",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.2f841b58.chunk.css"
+    "revision": "c5b2e8ea85b1f1371f55",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/css/main.0ec80247.chunk.css"
   },
   {
-    "revision": "cd47c0711133da24a6b0",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.5adf863c.chunk.js"
+    "revision": "d3159a0e3ee39817e8fb",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/js/2.8b1fd90a.chunk.js"
   },
   {
-    "revision": "06385b707f005eb22cbe",
-    "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.71455e12.chunk.js"
+    "revision": "c5b2e8ea85b1f1371f55",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/js/main.ed460264.chunk.js"
   },
   {
     "revision": "06501c667154fb7ac722",
     "url": "//michelle-pine.github.io/portfolio-2020/static/js/runtime-main.7813258b.js"
+  },
+  {
+    "revision": "4f4e81c471dbce45ca2ef32e95c06234",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/adv-writing-1.4f4e81c4.pdf"
+  },
+  {
+    "revision": "d563bc2c1af894ced682ef597144341d",
+    "url": "//michelle-pine.github.io/portfolio-2020/static/media/adv-writing-3.d563bc2c.pdf"
   },
   {
     "revision": "7db216d5279b3a4bc443d06c09a65109",
