@@ -95,8 +95,20 @@ body {
       border-radius: 10px;
       
     }
+    &.no-border {
+      img {
+        border: 0px;
+      }
+    }
     margin-bottom: 25px;
     cursor: zoom-in;
+    @include transition();
+    &:focus {
+      outline: none;
+      img {
+        border-color: $yellow;
+      }
+    }
     @media screen and (max-width: 900px) {
       margin-bottom: 0px;
       img {
@@ -123,8 +135,7 @@ body {
           border-bottom-right-radius: 10px;
           margin-bottom: 3px;
         }
-      }
-
+      } 
     }
     .page-image-wrapper {
       max-width: 350px;

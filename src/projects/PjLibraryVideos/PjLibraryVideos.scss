@@ -1,1 +1,13 @@
 @import '../../index.scss';
+
+.pj-library-videos {
+  .video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    @media screen and (max-width: 800px) {
+      margin-bottom: 0px;
+    }
+  }
+}

@@ -35,7 +35,7 @@
           color: $yellow;
           text-decoration: none;
           @include transition;
-          &:hover {
+          &:hover, &:focus {
             text-decoration: underline;
           }
         }

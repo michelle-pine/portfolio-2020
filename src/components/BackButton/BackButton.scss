@@ -3,8 +3,9 @@
 .back-button {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 20px;
+  margin-left: 115px;
   border: none;
   outline: none;
   font-family: $font-stack;
@@ -18,7 +19,7 @@
     margin-right: 10px;
   }
 
-  &:hover {
+  &:hover, &:focus {
     background: $purple;
   }
 
@@ -26,6 +27,7 @@
     position: relative;
     display: block;
     margin: 0 auto;
+    left: 0;
     text-align: center;
   }
 }

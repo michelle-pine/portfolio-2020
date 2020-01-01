@@ -41,9 +41,10 @@
     top: 30px;
     color: $purple;
   }
-  &:hover, &:focus {
+  &.unlocked:hover, &.unlocked:focus {
     background: $dark-purple;
     outline: none;
+    cursor: pointer;
     .big-link-icon {
       font-size: 65px;
     }
@@ -71,7 +72,7 @@
       justify-content: center;
       @include transition;
     }
-    &:hover, &:focus {
+    &.unlocked:hover, &.unlocked:focus {
       .big-link-icon {
         font-size: 40px;
       }

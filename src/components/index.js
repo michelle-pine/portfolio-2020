@@ -1,4 +1,5 @@
 /* PLOP_INJECT_IMPORT */
+import LockedProject from './LockedProject';
 import BigLink from './BigLink';
 import BackButton from './BackButton';
 import ExternalLink from './ExternalLink';
@@ -10,6 +11,7 @@ import Navbar from './Navbar';
 
 export {
   /* PLOP_INJECT_EXPORT */
+	LockedProject,
 	BigLink,
 	BackButton,
 	ExternalLink,
