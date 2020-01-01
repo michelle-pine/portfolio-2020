@@ -1,1 +1,94 @@
 @import '../../index.scss';
+
+.about-page {
+  .about-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    background: $dark-purple;
+    padding: 25px;
+    border-radius: 10px;
+    border: 3px solid $purple;
+    a {
+      color: $yellow;
+      @include transition;
+      text-decoration: none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+    .about-bio-image {
+      width: 33%;
+      overflow: hidden;
+      border-radius: 100%;
+      padding-top: 33%;
+      background-image: url('../../media/bio-pic.png');
+      background-size: cover;
+      background-position: center top;
+    }
+    .about-bio-info {
+      min-width: 0px;
+      max-width: 66%;
+      margin-left: 15px;
+    }
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+      border-width: 3px 0px;
+      border-radius: 0px;
+      .about-bio-image {
+        width: 50%;
+        padding-bottom: 18%;
+      }
+      .about-bio-info {
+        padding-top: 20px;
+        max-width: 100%
+      }
+    }
+  }
+  .skill-set {
+    display: flex;
+    max-width: 725px;
+    margin: 0 auto;
+    align-items: flex-start;
+    .skills {
+      width: 25%;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    @media screen and (max-width: 800px){
+      flex-wrap: wrap;
+      .skills {
+        width: 100%;
+        margin-right: 0px;
+        border-radius: 0px;
+        border-width: 3px 0px 0px 0px;
+        &:last-child {
+          border-bottom: 3px solid $purple;
+        }
+      }
+    }
+  }
+  .leadership-set, .experience-set {
+    max-width: 725px;
+    margin: 0 auto;
+    .experience {
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 800px) {
+      .experience {
+        margin-bottom:0px;
+        border-radius: 0px;
+        border-width: 3px 0px 0px 0px;
+        &:last-child {
+          border-bottom: 3px solid $purple;
+        }
+      }
+    }
+  }
+}

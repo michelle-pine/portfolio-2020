@@ -1,0 +1,23 @@
+@import '../../index.scss';
+
+.skills {
+  border: 3px solid $purple;
+  border-radius: 10px;
+  .skills-header {
+    background: $dark-purple;
+    padding: 10px;
+    color: $yellow;
+    font-weight: 600;
+    border-bottom: 3px solid $purple;
+    i {
+      margin-right: 10px;
+    }
+  }
+  .skill {
+    padding: 10px;
+    border-bottom: 3px solid $purple;
+    &:last-child {
+      border-bottom: 3px solid transparent;
+    }
+  }
+}
