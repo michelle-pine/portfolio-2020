@@ -53,7 +53,7 @@ function scrollPastHeader() {
      }, 1500);
   }
   else {
-    window.scrollTo(0, $header.height());
+    window.scrollTo(0, $header.height() - 50);
   }
 }
 
