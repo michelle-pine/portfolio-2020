@@ -51,7 +51,10 @@ function scrollPastHeader() {
     $([document.documentElement, document.body]).animate({
       scrollTop: $header.height()
      }, 1500);
-  };
+  }
+  else {
+    window.scrollTo(0, $header.height());
+  }
 }
 
 $(function () {
@@ -61,7 +64,7 @@ $(function () {
   $(".down-button").click(function () {
     scrollPastHeader();
   });
-  $("a.project").click(function () {
+  $("body").on("click", "a.project", function() {
     scrollPastHeader();
   });
   $(window).scroll(function() {    
